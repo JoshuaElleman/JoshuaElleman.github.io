@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
     <header>
@@ -12,10 +13,10 @@
 
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/Code_Review' | relative_url }}">Code Review</a>
-        <a href="{{ '/Enhancement_One' | relative_url }}">Enhancement One</a>
-        <a href="{{ '/Enhancement_Two' | relative_url }}">Enhancement Two</a>
-        <a href="{{ '/Enhancement_Three' | relative_url }}">Enhancement Three</a>
+        <a href="{{ '/code_review/' | relative_url }}">Code Review</a>
+        <a href="{{ '/enhancement_one/' | relative_url }}">Enhancement One</a>
+        <a href="{{ '/enhancement_two/' | relative_url }}">Enhancement Two</a>
+        <a href="{{ '/enhancement_three/' | relative_url }}">Enhancement Three</a>
       </nav>
     </header>
 
