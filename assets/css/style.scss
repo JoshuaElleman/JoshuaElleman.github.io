@@ -16,3 +16,21 @@
 .button:hover {
   background-color: #444;
 }
+
+.site-nav {
+  margin: 20px 0;
+}
+
+.site-nav a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 14px;
+  text-decoration: none;
+  border: 1px solid #666;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.site-nav a:hover {
+  background: #333;
+}
