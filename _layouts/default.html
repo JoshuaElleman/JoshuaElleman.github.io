@@ -2,26 +2,36 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title | default: site.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <header>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.tagline }}</p>
+    <div id="container">
+      <div class="inner">
 
-      <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/Code_Review' | relative_url }}">Code Review</a>
-        <a href="{{ '/Enhancement_One' | relative_url }}">Enhancement One</a>
-        <a href="{{ '/Enhancement_Two' | relative_url }}">Enhancement Two</a>
-        <a href="{{ '/Enhancement_Three' | relative_url }}">Enhancement Three</a>
-      </nav>
-    </header>
+        <header>
+          <h1>{{ site.title }}</h1>
+          <h2>{{ site.tagline }}</h2>
 
-    <main>
-      {{ content }}
-    </main>
+          <nav class="site-nav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/Code_Review' | relative_url }}">Code Review</a>
+            <a href="{{ '/Enhancement_One' | relative_url }}">Enhancement One</a>
+            <a href="{{ '/Enhancement_Two' | relative_url }}">Enhancement Two</a>
+            <a href="{{ '/Enhancement_Three' | relative_url }}">Enhancement Three</a>
+          </nav>
+        </header>
+
+        <hr>
+
+        <section id="main_content">
+          {{ content }}
+        </section>
+
+      </div>
+    </div>
   </body>
 </html>
